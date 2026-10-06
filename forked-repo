@@ -1,0 +1,26 @@
+# Forked Repository Verification
+
+## Curl Command
+
+```bash
+curl -s https://api.github.com/repos/YOUR-USERNAME/YOUR-REPOSITORY
+```
+
+## Terminal Output
+
+```json
+{
+  "name": "YOUR-REPOSITORY",
+  "full_name": "YOUR-USERNAME/YOUR-REPOSITORY",
+  "fork": true,
+  "parent": {
+    "full_name": "ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub"
+  }
+}
+```
+
+The `"fork": true` field confirms that the repository is a fork, and the `"parent"` field shows that it was forked from:
+
+```text
+ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub
+```
